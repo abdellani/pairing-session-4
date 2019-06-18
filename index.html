@@ -1,37 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>Fork Me! FCC: Test Suite Template</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-    <style>
-      @media only screen and (max-width: 700px) {
-        header {
-          font: 1em sans-serif;
-        }
-      }
-      nav {
 
-        position: fixed;
-        top: 0;
-        width: 100%;
+<head>
+  <meta charset="UTF-8">
+  <title>Fork Me! FCC: Test Suite Template</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    @media only screen and (max-width: 700px) {
+      header {
+        font: 1em sans-serif;
       }
-      #sections{
-        display: flex;
-      }
-    </style>
-  </head>
+    }
 
-  <body>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-    <div class="container">
+    #form {
+      margin-top: 100px;
+    }
+
+    #nav-bar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
+
+    #sections {
+      display: flex;
+    }
+  </style>
+</head>
+
+<body>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <div class="container">
     <header id="header">
-      <img src="https://via.placeholder.com/150" id="header-img">
+      <img src="https://via.placeholder.com/1110x150" id="header-img">
 
       <nav id="nav-bar" class="navbar navbar-expand-lg navbar-light bg-light">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
-          aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -50,15 +57,12 @@
       </nav>
     </header>
 
-    <div class="container p4">
-      <form id="form" action="https://www.freecodecamp.com/email-submit">
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
       <div class="form-group">
-        <input id="email" name="email" type="email" placeholder="Email" required/>
+        <input id="email" class="form-control" name="email" type="email" placeholder="Email" required />
       </div>
-
-      <input id="submit" type="submit"/>
+      <input id="submit" type="submit" class="btn btn-primary" />
     </form>
-    </div>
 
     <div id="sections">
       <section id="section1"></section>
@@ -71,12 +75,19 @@
       <source src="video.mp4" type="video/mp4">
     </video>
 
-    </div>
+  </div>
 
 
-    <script  src="js/index.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  </body>
+  <script src="js/index.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
